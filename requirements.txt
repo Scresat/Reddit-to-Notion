@@ -11,3 +11,5 @@ tomli==2.0.1
 update-checker==0.18.0
 urllib3==1.26.12
 websocket-client==1.4.2
+pre-commit==3.2.2
+black==23.3.0
