@@ -20,7 +20,7 @@ So everyday while having my breakfast, I open the notion page on my phone (for w
 -   Reddit API token
     > Follow the steps [here](https://praw.readthedocs.io/en/latest/tutorials/reply_bot.html), your created bots and details can be found [here](https://www.reddit.com/prefs/apps)
 -   Notion integration key
-    > Create a notion page, take note of its ID (can be found in page URL), and create an integration using [this guide](https://developers.notion.com/docs/create-a-notion-integration)
+    > Create a notion page, and create an integration using [this guide](https://developers.notion.com/docs/create-a-notion-integration).
 
 ### Running
 
