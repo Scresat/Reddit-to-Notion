@@ -1,0 +1,21 @@
+version: "3.1"
+
+services:
+    reddit-notion-sync:
+        restart: unless-stopped
+        container_name: reddit-notion-sync
+
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+            args:
+                - HOURS_TO_SYNC=${HOURS_TO_SYNC:-8,20}
+
+        environment:
+            - NOTION_KEY=$NOTION_KEY
+            - NOTION_PAGE_ID=$NOTION_PAGE_ID
+            - REDDIT_USERNAME=$REDDIT_USERNAME
+            - REDDIT_PASSWORD=$REDDIT_PASSWORD
+            - REDDIT_CLIENT_ID=$REDDIT_CLIENT_ID
+            - REDDIT_SECRET=$REDDIT_SECRET
+            - TIMEZONE=$TIMEZONE
