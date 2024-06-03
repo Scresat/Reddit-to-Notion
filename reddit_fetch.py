@@ -52,7 +52,6 @@ def fetch_posts(subreddit_to_scrape, r):
 
         post_object["content"]["comments"] = []
 
-        range(0)
         comments_obj_list = get_comments(post.permalink)
         for comment in comments_obj_list:
             if (len(post_object["content"]["comments"])) > 2:
