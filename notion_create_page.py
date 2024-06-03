@@ -13,6 +13,7 @@ def create_page(children, subreddit_details):
         },
         "children": children,
     }
+    
     if (
         subreddit_details["icon"] != ""
         and subreddit_details["icon"] is not None
